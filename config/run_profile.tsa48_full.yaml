@@ -1,0 +1,31 @@
+selection:
+  # Full North Island TSA 48 boundary. The NICC intersection is a flag/part
+  # within this model, not the build boundary.
+  tsa:
+    - "48"
+
+  # Full North Island TSA 48 boundary. The NICC intersection and K3Z are
+  # block-level flags inside this model; the NICC-only model is built
+  # separately from the same full-TSA inputs.
+  boundary_path: "data/source/aoi/tsa48_full.gpkg"
+  boundary_layer: "tsa48_full"
+  boundary_code: "48"
+  strata: []
+
+modes:
+  resume: true
+  dry_run: false
+  verbose: true
+  skip_checks: false
+
+  # First executable lane. Auto sampling keeps each VDYP console batch inside
+  # the current 30-second timeout; switch back to all after the timeout is
+  # raised. The managed lane is a VDYP transform, not accepted TIPSY output.
+  vdyp_sampling_mode: auto
+  vdyp_two_pass_rebin: false
+  vdyp_min_stands_per_si_bin: 10
+  managed_curve_mode: vdyp_transform
+
+run:
+  run_id: "tsa48_full_20261021"
+  log_dir: "runtime/logs"

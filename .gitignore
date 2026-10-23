@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Coverage, runtime, and Hypothesis records
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+runtime/
+.hypothesis/
+
+# Environments
+.venv/
+venv/
+
+# Builds
+_build/
+docs/_build/
+build/
+dist/
+
+# Local work and private or generated material
+tmp/
+local/
+data/private/
+data/downloads/
+data/bc/
+data/*.feather
+data/*.pkl
+data/*.xlsx
+data/03_input-*
+data/04_*
+data/tipsy_*
+data/model_input_bundle/
+outputs/
+output/
+vdyp_io/
+tipsy_io/
+plots/
+src/*.egg-info/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

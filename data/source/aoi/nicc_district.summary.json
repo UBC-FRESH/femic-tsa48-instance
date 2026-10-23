@@ -1,0 +1,12 @@
+{
+  "area_ha": 7499969.72,
+  "bounds": [
+    731684.31,
+    542039.84,
+    1055522.857,
+    922563.95
+  ],
+  "crs": "EPSG:3005",
+  "layer": "nicc_district",
+  "path": "data/source/aoi/nicc_district.gpkg"
+}

@@ -1,0 +1,12 @@
+{
+  "area_ha": 1083012.84,
+  "bounds": [
+    740950.574,
+    542039.84,
+    988579.684,
+    688552.175
+  ],
+  "crs": "EPSG:3005",
+  "layer": "tsa48_nicc",
+  "path": "data/source/aoi/tsa48_nicc.gpkg"
+}

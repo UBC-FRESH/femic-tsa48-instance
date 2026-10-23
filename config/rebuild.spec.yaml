@@ -1,0 +1,62 @@
+schema_version: "1.0"
+
+instance:
+  case_id: "northisland"
+  instance_root: "."
+
+runtime:
+  run_config: "config/run_profile.northisland.yaml"
+  tipsy_config_dir: "config/tipsy"
+  patchworks_config: "config/patchworks.runtime.northisland.yaml"
+  log_dir: "runtime/logs"
+  baseline_unexpected_diff_threshold: 0
+
+steps:
+  - step_id: "validate_case"
+    kind: "femic_command"
+    command: "femic prep validate-case --run-config ${runtime.run_config}"
+    required: true
+    depends_on: []
+    mutable_artifacts: []
+    expected_outputs:
+      - "case preflight success signal"
+  - step_id: "geospatial_preflight"
+    kind: "femic_command"
+    command: "femic prep geospatial-preflight"
+    required: true
+    depends_on:
+      - "validate_case"
+    mutable_artifacts: []
+    expected_outputs:
+      - "geospatial runtime success signal"
+  - step_id: "compile_upstream"
+    kind: "femic_command"
+    command: "femic run --run-config ${runtime.run_config}"
+    required: true
+    depends_on:
+      - "geospatial_preflight"
+    mutable_artifacts:
+      - "data/*"
+      - "runtime/logs/*"
+    expected_outputs:
+      - "run_manifest-<run_id>.json"
+
+invariants:
+  - invariant_id: "accounts_targets_presence"
+    severity: "fatal"
+    metric: "accounts.targets.required_present"
+    comparator: "eq"
+    target: true
+    remediation: "Re-run the matrix build and inspect accounts.csv/protoaccounts.csv."
+  - invariant_id: "managed_area_sanity"
+    severity: "fatal"
+    metric: "managed_area_ha"
+    comparator: "gt"
+    target: 0
+    remediation: "Check IFM assignment logic and source checkpoint inputs."
+  - invariant_id: "block_join_consistency"
+    severity: "fatal"
+    metric: "block_join_mismatch_count"
+    comparator: "eq"
+    target: 0
+    remediation: "Rebuild blocks.shp and verify the BLOCK join keys."

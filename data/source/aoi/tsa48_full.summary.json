@@ -1,0 +1,12 @@
+{
+  "area_ha": 2441931.03,
+  "bounds": [
+    740948.614,
+    494968.788,
+    1091119.911,
+    688552.543
+  ],
+  "crs": "EPSG:3005",
+  "layer": "tsa48_full",
+  "path": "data/source/aoi/tsa48_full.gpkg"
+}

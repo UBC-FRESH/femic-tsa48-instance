@@ -1,0 +1,17 @@
+# FEMIC Full TSA 48 Instance
+
+> Agent-facing index for the full TSA 48 model. Read the linked pages before you change the project.
+
+## Start here
+
+- [Home](index.html): the documentation home for the project.
+- [API reference](api/index.html): every public function, with its parameters, types, and return values.
+
+## Guides
+
+- [TSA 48 AOI](aoi.html): the full-TSA boundary, NICC intersection, and K3Z tenure sources.
+- [Model build](model-build.html): the FEMIC-to-ws4 chain, calibrated THLB, part accounting, commands, and runtime boundary.
+- [Web UI](web-ui.html): the ws4 serve command, exact geometry, land-base underlay, EPSG:3005 handling, and verification checks.
+- [Related instance](https://github.com/UBC-FRESH/femic-northisland-instance): the independent NICC + K3Z dataset and its deliberately related scope.
+
+- [VDYP runtime boundary](../notes/reference/vdyp-runtime.md): Wine, the batch timeout evidence, and the provisional auto-sampling workaround.

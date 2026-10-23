@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this model instance, cite the repository and the upstream FEMIC and ws4 software."
+title: "FEMIC TSA 48 Instance"
+version: 0.1.0
+date-released: 2026-10-23
+authors:
+  - family-names: "UBC FRESH Lab"
+repository-code: "https://github.com/UBC-FRESH/femic-tsa48-instance"
+license: MIT

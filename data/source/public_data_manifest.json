@@ -1,0 +1,39 @@
+{
+  "entries": [
+    {
+      "entry_count": 44,
+      "key_table": "a00000001.gdbtable",
+      "key_table_bytes": 345,
+      "key_table_sha256": "8961d590b56ef28ebd7cefee4662b17d139ea3dd040a19bfce4f08cea8c51f32",
+      "path": "bc/tsa/FADM_TSA.gdb"
+    },
+    {
+      "entry_count": 509,
+      "key_table": "a00000001.gdbtable",
+      "key_table_bytes": 6527,
+      "key_table_sha256": "01a9cdb6fffdee79ab9ccec120ac8962f8e7c4dfc28bb8cfb8c3aee8b659b71e",
+      "path": "bc/siteprod/Site_Prod_BC.gdb"
+    },
+    {
+      "entry_count": 45,
+      "key_table": "a00000001.gdbtable",
+      "key_table_bytes": 331,
+      "key_table_sha256": "1eee191b69d5c714dd564168d8d6779a6dcb9dc29433268b211a64f06c437885",
+      "path": "bc/vri/2025/VEG_COMP_LYR_R1_POLY_2025.gdb"
+    },
+    {
+      "entry_count": 47,
+      "key_table": "a00000001.gdbtable",
+      "key_table_bytes": 371,
+      "key_table_sha256": "5244d2691d1f0e7b238c190d0294e3b0f7d2a5e83dd81bf6704eba493bd2763d",
+      "path": "bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb"
+    }
+  ],
+  "required_paths": [
+    "bc/tsa/FADM_TSA.gdb",
+    "bc/siteprod/Site_Prod_BC.gdb",
+    "bc/vri/2025/VEG_COMP_LYR_R1_POLY_2025.gdb",
+    "bc/vri/2025/VEG_COMP_VDYP7_INPUT_POLY_AND_LAYER_2025.gdb"
+  ],
+  "root": "${FEMIC_EXTERNAL_DATA_ROOT}"
+}

@@ -1,0 +1,54 @@
+schema_version: 1
+tsa:
+  tsa_id: tsa_48
+  tsa_code: '48'
+  tsa_name: North Island
+canonical_summary:
+  candidate_fact_count: 272
+  document_count: 1
+  fact_family_counts:
+    au_definition_candidate: 4
+    source_layer_candidate: 71
+    thlb_reference: 150
+    tipsy_input_candidate: 47
+  candidate_facts_path: metadata/tsr/tsa_candidate_facts.json
+  documents_path: metadata/tsr/tsa_documents.json
+  registry_path: metadata/tsr/tsa_registry.json
+adopted:
+  source_layers: []
+  au_definitions: []
+  thlb_references:
+    - value: 2426749
+      unit: ha
+      label: TSA boundary area
+      provenance_id: "NI_TSA_Data_Package_2020.pdf#page=25"
+      notes: "Table 4, North Island TSA Boundary Area."
+    - value: 677289
+      unit: ha
+      label: ocean removed
+      provenance_id: "NI_TSA_Data_Package_2020.pdf#page=25"
+      notes: "Table 4, Ocean."
+    - value: 1749460
+      unit: ha
+      label: gross land area after ocean
+      provenance_id: "NI_TSA_Data_Package_2020.pdf#page=25"
+      notes: "Table 4, North Island TSA Gross Area."
+    - value: 714726
+      unit: ha
+      label: Section 8 decision area
+      provenance_id: "NI_TSA_Data_Package_2020.pdf#page=25"
+      notes: "Table 4, Section 8 Decision Area."
+    - value: 177505
+      unit: ha
+      label: current timber harvesting land base
+      provenance_id: "NI_TSA_Data_Package_2020.pdf#page=25"
+      notes: "Table 4, Current timber harvesting land base."
+    - value: 1248100
+      unit: m3/yr
+      label: current allowable annual cut
+      provenance_id: "NI_TSA_Data_Package_2020.pdf#page=54"
+      notes: "Section 7.1.1: the AAC for the North Island TSA was set at 1 248 100 cubic metres."
+  tipsy_inputs: []
+  notes:
+    - "The full TSA 48 model is the benchmark model. The NICC intersection is a block-level part flag inside it; the NICC-only model is built separately."
+    - "The 2024 overview map in the Basecamp forward shows the TSA boundary, the Section 8 decision area, and the NICC district; it does not change the AAC or THLB numbers above."

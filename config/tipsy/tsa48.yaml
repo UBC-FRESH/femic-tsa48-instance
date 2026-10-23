@@ -1,0 +1,88 @@
+# Case onboarding template for FEMIC TIPSY rule configuration.
+# Copy this file to a case-specific YAML file under config/tipsy/. The schema
+# keeps the legacy tsa_code key for compatibility even when the case is a
+# non-TSA FMU.
+
+schema_version: 1
+tsa_code: "48"  # legacy key name; use as the case/FMU code where applicable
+
+metadata:
+  source_tsr:
+    - title: ""
+      year: null
+      url: ""
+      notes: ""
+  author: ""
+  created_utc: ""
+  notes: ""
+
+defaults:
+  e:
+    OAF2: 0.95
+    FIZ: "I"
+    Regen_Method: "P"
+    Proportion: 1
+  f:
+    OAF2: 0.95
+    FIZ: "I"
+    Regen_Method: "P"
+    Proportion: 1
+    SI_c1: 1.0
+    SI_c2: 0.0
+
+# Rule order is first-match-wins.
+rules:
+  - id: "northisland_provisional_default"
+    when: {}
+    assign:
+      e:
+        Regen_Delay: 2
+        Density: 1200
+        SPP_1: "FDI"
+        PCT_1: 60
+        SPP_2: "HWC"
+        PCT_2: 40
+      f:
+        Regen_Delay: 1
+        Density: 1200
+        SPP_1: "FDI"
+        PCT_1: 60
+        SPP_2: "HWC"
+        PCT_2: 40
+        SI_c1: 1.0
+        SI_c2: 0.0
+    notes: "Provisional broad coastal default. Replace with reviewed TSA 48 TIPSY rules; the first ws4 lane uses VDYP-transform managed curves." 
+
+required_fields:
+  - AU
+  - TBLno
+  - BEC
+  - Proportion
+  - Regen_Delay
+  - SI
+  - OAF1
+  - OAF2
+  - FIZ
+  - Regen_Method
+  - Density
+  - SPP_1
+  - PCT_1
+  - SPP_2
+  - PCT_2
+  - SPP_3
+  - PCT_3
+  - SPP_4
+  - PCT_4
+  - SPP_5
+  - PCT_5
+  - GW_1
+  - GW_2
+  - GW_3
+  - GW_4
+  - GW_5
+  - GW_age_1
+  - GW_age_2
+  - GW_age_3
+  - GW_age_4
+  - GW_age_5
+  - Util_DBH_cm
