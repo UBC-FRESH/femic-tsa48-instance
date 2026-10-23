@@ -1,13 +1,13 @@
 schema_version: "1.0"
 
 instance:
-  case_id: "northisland"
+  case_id: "tsa48"
   instance_root: "."
 
 runtime:
-  run_config: "config/run_profile.northisland.yaml"
+  run_config: "config/run_profile.tsa48_full.yaml"
   tipsy_config_dir: "config/tipsy"
-  patchworks_config: "config/patchworks.runtime.northisland.yaml"
+  patchworks_config: "config/patchworks.runtime.windows.yaml"
   log_dir: "runtime/logs"
   baseline_unexpected_diff_threshold: 0
 
