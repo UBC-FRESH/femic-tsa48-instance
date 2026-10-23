@@ -86,239 +86,239 @@ targets:
   period: 1
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 1
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 1
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 1
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 2
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 2
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 2
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 2
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 3
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 3
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 3
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 3
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 4
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 4
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 4
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 4
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 5
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 5
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 5
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 5
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 6
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 6
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 6
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 6
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 7
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 7
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 7
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 7
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 8
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 8
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 8
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 8
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 9
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 9
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 9
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 9
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.0_1.size
   period: 10
   period_width: 10
   maximum: 0.0
-  max_weight: 1000000.0
+  max_weight: 10000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.1_5.size
   period: 10
   period_width: 10
   maximum: 10.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.40_50.size
   period: 10
   period_width: 10
   maximum: 5.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
 - account: patch.grpblk.50_9999999.size
   period: 10
   period_width: 10
   maximum: 0.0
-  max_weight: 100000.0
+  max_weight: 1000000.0
   notes: opening-size policy, maxima assumption; Very High=1,000,000, High=100,000
