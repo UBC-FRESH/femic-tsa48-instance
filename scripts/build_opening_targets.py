@@ -5,9 +5,8 @@ The policy is the MKRF staff guidance recorded for the North Island work:
 openings at or below 1 ha and above 50 ha are excluded, 1-5 ha is capped at
 10% of opening area, and 40-50 ha at 5%. The 5-40 ha class has no target.
 
-The shares are treated as **maxima**, matching the current MKRF implementation.
-The maximum-vs-minimum semantics and the Very High/High numeric weights are
-still an open policy confirmation; this script records the assumption inline.
+The shares are confirmed as **ceilings** (MKRF staff, October 2026). The
+Very High/High numeric weights remain an implementation calibration.
 """
 
 from __future__ import annotations
@@ -20,10 +19,10 @@ import yaml
 DEFAULT_PERIODS = 10
 DEFAULT_PERIOD_WIDTH = 10
 PATCH_CLASSES: tuple[tuple[str, float, float], ...] = (
-    ("patch.grpblk.0_1.size", 0.0, 1_000_000.0),
-    ("patch.grpblk.1_5.size", 10.0, 100_000.0),
-    ("patch.grpblk.40_50.size", 5.0, 100_000.0),
-    ("patch.grpblk.50_9999999.size", 0.0, 100_000.0),
+    ("patch.grpblk.0_1.size", 0.0, 10_000_000.0),
+    ("patch.grpblk.1_5.size", 10.0, 1_000_000.0),
+    ("patch.grpblk.40_50.size", 5.0, 1_000_000.0),
+    ("patch.grpblk.50_9999999.size", 0.0, 1_000_000.0),
 )
 
 

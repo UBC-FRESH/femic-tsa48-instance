@@ -5,18 +5,17 @@ strict lower bound.
 
 ## Policy
 
-The current MKRF staff guidance is expressed as opening-size shares. The
-implementation treats the shares as **maxima**, matching the current MKRF
-implementation; the maximum-vs-minimum semantics and the Very High/High numeric
-weights still need confirmation before release.
+The MKRF staff guidance is expressed as opening-size **ceilings** (confirmed
+October 2026). The Very High/High numeric weights are an implementation
+calibration, not a policy statement.
 
 | Class | Maximum share | Weight |
 | --- | ---: | ---: |
-| `<= 1 ha` | 0% | Very High, 1,000,000 |
-| `> 1-5 ha` | 10% | High, 100,000 |
+| `<= 1 ha` | 0% | Very High, 10,000,000 |
+| `> 1-5 ha` | 10% | High, 1,000,000 |
 | `> 5-40 ha` | none | none |
-| `> 40-50 ha` | 5% | High, 100,000 |
-| `> 50 ha` | 0% | High, 100,000 |
+| `> 40-50 ha` | 5% | High, 1,000,000 |
+| `> 50 ha` | 0% | High, 1,000,000 |
 
 The patch account joins only blocks that touch (`search_distance: 0.0`) and
 uses `product.Treated.managed.CC` as the treated-area criterion:
