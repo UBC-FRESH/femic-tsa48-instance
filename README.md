@@ -2,7 +2,8 @@
 
 Public FEMIC and ws4 model instance for the full North Island TSA 48 AOI.
 FEMIC rebuilds the inventory and yield curves from public BC data; ws4 compiles
-the model, runs the benchmark, and serves the web UI.
+the model, runs the benchmark, and serves the web UI. This repository is
+tracked in `femic` as the `external/femic-tsa48-instance` submodule.
 
 ## Runtime lane
 
