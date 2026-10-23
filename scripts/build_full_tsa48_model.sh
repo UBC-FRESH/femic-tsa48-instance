@@ -101,4 +101,31 @@ python scripts/prepare_land_base.py \
   --aoi "$LAND_BASE_AOI" \
   --out "$MODEL_DIR/land_base.geojson"
 
+if [ "${BUILD_OPENING:-0}" = "1" ]; then
+  python scripts/build_topology.py \
+    --fragments "$MODEL_DIR/fragments.geojson" \
+    --out "$MODEL_DIR/topology.csv" \
+    --distance-m 0
+  python scripts/build_opening_schedule.py \
+    --dataset "$MODEL_DIR/matrix" \
+    --topology "$MODEL_DIR/topology.csv" \
+    --out "$MODEL_DIR/schedules/opening_first.csv" \
+    --years "$YEARS" \
+    --min-area 5 \
+    --max-area 40 \
+    --target-per-decade "${OPENING_TARGET_M3:-12481000}" \
+    --intermediate-share 0
+  python -m ws4.cli simulate \
+    --dataset "$MODEL_DIR/matrix" \
+    --schedule "$MODEL_DIR/schedules/opening_first.csv" \
+    --out "$MODEL_DIR/runs/opening_first" \
+    --years "$YEARS" \
+    --topology "$MODEL_DIR/topology.csv" \
+    --patch-accounts config/patch_accounts.tsa48_full.yaml \
+    --patch-membership
+  python -m ws4.cli report \
+    --run "$MODEL_DIR/runs/opening_first" \
+    --targets config/targets.tsa48_full_opening.yaml
+fi
+
 echo "full TSA 48 model built under $MODEL_DIR"

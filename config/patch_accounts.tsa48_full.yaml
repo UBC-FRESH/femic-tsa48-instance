@@ -1,0 +1,14 @@
+# Opening-size patch account for the full TSA 48 benchmark.
+#
+# The policy joins only blocks that actually touch, so search_distance is 0.0.
+# The criterion is the treated-area product label, which WS4 normalises to the
+# block's treated share; a fully treated block has value 1.0.
+#
+# Size classes follow the MKRF staff guidance:
+#   <= 1 ha, > 1-5 ha, > 5-40 ha, > 40-50 ha, > 50 ha.
+accounts:
+  - name: patch.grpblk
+    criteria: product.Treated.managed.CC
+    threshold: 0.0
+    size_classes: [1.0, 5.0, 40.0, 50.0, .inf]
+    search_distance: 0.0

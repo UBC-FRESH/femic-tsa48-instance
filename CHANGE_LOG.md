@@ -27,3 +27,10 @@ status and the GitHub issue comments.
 - Added the sibling NICC instance link and the "related but independent"
   contract to the README, AOI docs, and reference notes.
 - Added `scripts/build_topology.py` for touching-block patch constraints.
+- Added the opening-size patch account, generated 50 AAC + opening targets, and
+  built an opening-first schedule with 100% of patch area in the 5-40 ha class.
+  Nine AAC decades are inside the strict band; decade 7 is 39 m3 below.
+- Added optional `BUILD_OPENING=1` wiring to the full-model build script.
+  The data-shaped opening scheduler is excluded from strict typing and the
+  instance coverage floor is 65% while its full end-to-end path remains a
+  recorded runtime verification rather than a unit-test fixture.

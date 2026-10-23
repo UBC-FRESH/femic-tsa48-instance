@@ -17,7 +17,7 @@ after its parent issue exists and the maintainer approves it.
 | P2 FEMIC upstream build | #3 | `feature/tsa48-upstream` | complete |
 | P3 Full model and part accounting | #4 | `feature/tsa48-model` | complete |
 | P4 Calibrated THLB and AAC benchmark | #5 | `feature/tsa48-benchmark` | complete |
-| P5 UI, topology and related-instance docs | #6 | `feature/tsa48-ui` | active |
+| P5 UI, topology and related-instance docs | #6 | `feature/tsa48-ui` | complete |
 | P6 Release and clean-checkout verification | #7 | `feature/tsa48-release` | planned |
 
 ## Phase 0: Bootstrap
@@ -122,16 +122,16 @@ Acceptance criteria:
 
 Parent issue: #6
 Branch: `feature/tsa48-ui`
-Status: active
+Status: complete
 
 Goal: finish the full-model UI and the deliberately related, independent
 instance documentation.
 
 - [x] P5.1 Serve exact block geometry and the land-base underlay
 - [x] P5.2 Add the block topology builder for spatial constraints
-- [ ] P5.3 Add the opening-size patch accounts and targets
-- [ ] P5.4 Reconcile the AAC benchmark with the opening policy
-- [ ] P5.5 Record the related-instance cross-references in both repositories
+- [x] P5.3 Add the opening-size patch accounts and targets (#8)
+- [x] P5.4 Reconcile the AAC benchmark with the opening policy (#9)
+- [x] P5.5 Record the related-instance cross-references in both repositories
 
 Acceptance criteria:
 

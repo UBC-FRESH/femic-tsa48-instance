@@ -116,6 +116,17 @@ flags NICC/outside/K3Z parts, builds part datasets and schedules, simulates and
 reports each part, and generates the exact UI and land-base geometry. The
 Patchworks export is an interchange package only.
 
+Set `BUILD_OPENING=1` to also build the touching-block topology, the
+opening-first 5-40 ha schedule, and the policy-checked simulation:
+
+```bash
+BUILD_OPENING=1 scripts/build_full_tsa48_model.sh
+```
+
+The opening policy is recorded in `config/patch_accounts.tsa48_full.yaml`,
+`config/targets.tsa48_full_opening.yaml`, and
+`notes/reference/opening-policy.md`.
+
 The upstream data root must contain the public BC TSA, VRI and VDYP input
 surfaces. VDYP7 runs under Wine on Linux; the host needs `wine` and `wine32`.
 The first lane uses the VDYP-transform managed curve mode, so it does not
